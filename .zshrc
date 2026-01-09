@@ -37,6 +37,9 @@ export PGUSER='root'
 export PGPASSWORD='password'
 export PGDATABASE='postgres'
 
+# Screeps API Token
+export SCREEPS_TOKEN='8a37169b-ede4-430b-96ed-5f6089a5011b'
+
 alias ardhis='cypher-shell -a bolt://10.42.112.11:7087 -u neo4j -p "funny-coffee-64-askrandhistroical" --encryption=false'
 alias ard90='cypher-shell -a bolt://10.42.112.11:9087 -u neo4j -p "funny-coffee-64-askrand90to96" --encryption=false'
 alias ard97='cypher-shell -a bolt://10.42.112.11:9787 -u neo4j -p "funny-coffee-64-askrand97to03" --encryption=false'
