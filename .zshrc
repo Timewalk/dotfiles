@@ -13,9 +13,9 @@ export ZSH="$HOME/.oh-my-zsh"
 export AWS_CA_BUNDLE="/Users/Shared/RANDCerts/RAND_PKI_Root.pem"
 
 # suite-sparse for python fed model
-export UMFPACK_INCLUDE_DIR=$(brew --prefix suite-sparse@5.13.0)/include
-export UMFPACK_LIBRARY_DIR=$(brew --prefix suite-sparse@5.13.0)/lib
-export LD_LIBRARY_PATH=$(brew --prefix suite-sparse@5.13.0)/lib:$LD_LIBRARY_PATH
+export UMFPACK_INCLUDE_DIR=$(brew --prefix suite-sparse)/include
+export UMFPACK_LIBRARY_DIR=$(brew --prefix suite-sparse)/lib
+export LD_LIBRARY_PATH=$(brew --prefix suite-sparse)/lib:$LD_LIBRARY_PATH
 
 # Path to mySQL
 export PATH=$PATH:/usr/local/mysql/bin
@@ -31,9 +31,10 @@ export PATH=$PATH:/usr/local/mysql/bin
 alias dbc='nvim ~/.config/nvim/lua/core/dbconfig.lua'
 alias nvimc='nvim ~/.config/nvim'
 
-export PGHOST='budgetmodel.rand.org'
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+export PGHOST='localhost'
 export PGPORT=5432
-export PGUSER='root'
+export PGUSER='jklarich'
 export PGPASSWORD='password'
 export PGDATABASE='postgres'
 
@@ -177,3 +178,4 @@ source $ZSH/oh-my-zsh.sh
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 export NODE_EXTRA_CA_CERTS="/Users/jklarich/.certs/randroot_2022.crt"
+export PATH="$HOME/.local/bin:$PATH"
